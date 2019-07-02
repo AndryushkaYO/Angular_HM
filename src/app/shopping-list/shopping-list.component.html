@@ -1,9 +1,16 @@
 <div class="row">
   <div class="col-xs-10">
     <app-shopping-list-edit> </app-shopping-list-edit>
-    <hr>
+    <hr />
     <ul class="list-group">
-      <a class="list-group-item" href="#" style="cursor: pointer;"></a>
+      <a
+        class="list-group-item"
+        href="#"
+        style="cursor: pointer;"
+        *ngFor="let ingra of ingradients"
+      >
+      {{ingra.name}} ({{ingra.amount}})
+      </a>
     </ul>
   </div>
 </div>
