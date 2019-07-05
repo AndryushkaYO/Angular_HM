@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  showContent = { showRecipeBook: false, showShoppingList: true };
+  
+  onChoose(data:any){
+    this.showContent=data;
+  }
+
 }
