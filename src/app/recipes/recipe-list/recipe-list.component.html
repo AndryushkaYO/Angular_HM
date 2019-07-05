@@ -3,6 +3,6 @@
     <a href="#" class="btn btn-success center-block">Add new recipe</a>
   </div>
   <div class="col-xs-12 mt-10" >
-   <app-recipe-item *ngFor="let recipe of recipes"></app-recipe-item>
+   <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>
   </div>
 </div>
